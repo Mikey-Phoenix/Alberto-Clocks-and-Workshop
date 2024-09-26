@@ -1,0 +1,1201 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Iso&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Distressed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    overflow-x: hidden !important;
+    margin: 0% !important;
+    padding: 0% !important;
+}
+
+/****************************************************************** NAVBAR *******************************************************************/
+.logo{
+    margin-top: -30px;
+    margin-bottom: -20px;
+    margin-left: 10px;
+    width: 200px;
+    height: 100px;
+}
+.color{
+    background-color: #f6c763;
+    display: flex;
+    align-items: center;
+}
+nav .links{
+    margin: auto;
+    font-size: 22px;
+}
+.nav-link.active{
+    color: white !important;
+}
+.nav-link{
+    transition: all ease .3s;
+}
+.nav-link:hover{
+    color: saddlebrown !important;
+}
+#dropdown #active2{
+    color: saddlebrown;
+}
+nav .person{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 10px;
+}
+nav .person .photo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(63, 63, 63);
+    font-size: 25px;
+    width: 40px;
+    height: 40px;
+}
+nav .person .userName{
+    color: black;
+    font-size: 17px;
+    font-weight: 200;
+    margin-top: 0px;
+    margin-bottom: 0%;
+}
+nav .cart-icon{
+    color: black;
+    font-size: 25px;
+    margin-top: 12px;
+    margin-left: 20px;
+}
+nav .indicator{
+    position: absolute;
+    transform: translate(-50%, 30%);
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+nav .fa-eye{
+    font-size: 25px;
+    margin-top: 12px;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+.views{
+    transform: translateY(15%);
+    margin-left: -10px;
+    font-size: 20px;
+    font-weight: 600;
+}
+form .search{
+    height: 50px;
+    border-radius: 50px 0 0 50px;
+    border: 0px;
+    box-shadow: 1px 1px 5px rgb(63, 63, 63);
+}
+.search-icon{
+    border-top-right-radius: 100px !important;
+    border-bottom-right-radius: 100px !important;
+    margin-left: -8px;
+    padding-right: 20px;
+    border: 0px !important;
+    height: 50px;
+    width: 60px;
+    background: saddlebrown !important;
+    box-shadow: 1px 1px 5px rgb(63, 63, 63);
+    color: white !important;
+}
+form .search-icon:hover{
+    background: rgb(175, 88, 25);
+}
+
+
+/****************************************************************** HEADER *******************************************************************/
+header{
+    margin-top: 79px;
+    height: 100vh;
+    position: relative;
+}
+.megaContainer{
+    display: flex;
+    flex-direction: row;
+    padding: 0px;
+    justify-content: flex-start;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    transition: all ease-in-out .5s;
+    animation: fadeVisibility 0.8s;
+}
+.visible{
+    width: 100%;
+    z-index: 1;
+    position: absolute;
+    top: 0px;
+}
+#visible{
+    background-image: url("../images/carousel/akram-huseyn-f3nGngsnp3A-unsplash2.jpg");
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
+
+@keyframes fadeVisibility {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+        transform: opacity linear;
+    }
+}
+
+.hidden{
+    background-image: url("../images/carousel/akram-huseyn-f3nGngsnp3A-unsplash2.jpg");
+}
+
+.transparent{
+    opacity: 0;
+}
+.opaque{
+    opacity: 1;
+}
+.carousel-actions{
+    z-index: 4;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.carousel-actions .carousel-buttons{
+    border-radius: 50px;
+    border: 0px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 50px;
+    color: saddlebrown;
+    margin: 0px 30px;
+}
+.big-logo{
+    height: 200px;
+    width: 400px;
+}
+.openingwords{
+    width: fit-content;
+    font-size: 30px;
+    font-weight: 600;
+    color: black;
+    text-shadow: 2px 2px 10px white;
+    margin-left: 50px;
+}
+.container{
+    height: 100vh;
+    min-width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    background-size: 170vw 100vh;
+}
+
+
+.almightyContainer{
+    background-color: white;
+    margin-bottom: 420px;
+}
+
+
+/****************************************************************** DISCOUNT SECTION *******************************************************************/
+.discount{
+    width: 90vw;
+    margin: auto;
+    margin-top: 0px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+}
+.discount .gridItems{
+    border-radius: 15px;
+    border:2px solid saddlebrown;
+    position: relative;
+}
+.discount .image-holder .cast{
+    border-radius: 15px;
+}
+.other{
+    padding-left: 10px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border: 1px solid saddlebrown;
+    border-top: 2px solid saddlebrown;
+    border-radius: 15px;
+}
+.discount-amount{
+    display: grid;
+    grid-template-columns: auto;
+    font-weight: 200 !important;
+    background-color: rgb(253, 51, 51);
+    color: #f6c763;
+    border-radius:0px 0px 15px 15px;
+    padding: 10px;
+    box-shadow: 2px 0px 10px rgb(175, 88, 25);
+    font-size: 45px;
+    text-shadow: 2px 0px 10px rgb(175, 88, 25);
+    position: absolute;
+    top: 0%;
+    right: 10px;
+    font-family: 'Rubik Distressed', cursive;
+}
+#thirty{
+    background-image: url("https://clockshops.com/wp-content/uploads/2022/04/BUL-C4867-1-462x462.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: all ease-in-out .3s;
+    animation: fadeVisibility2 .3s;
+}
+#twenty{
+    background-image: url("https://cdn11.bigcommerce.com/s-g62km8uew2/images/stencil/1280x1280/products/1180/35165/CLSL03_portrait_8__53813.1638464427.jpg?c=1");
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: all ease-in-out .3s;
+    animation: fadeVisibility2 .3s;
+}
+#ten{
+    background-image: url("https://cdn11.bigcommerce.com/s-g62km8uew2/images/stencil/640w/products/1179/35144/CLCN05_portrait_8__04224.1638464168.jpg?c=1");
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: all ease-in-out .3s;
+    animation: fadeVisibility2 .3s;
+}
+.name{
+    font-size: 27px;
+}
+.inner-other{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100px;
+}
+
+
+/****************************************************************** PRODUCTS *******************************************************************/
+.productGalary{
+    padding-top: 70px;
+    font-size: 50px;
+    text-align: center;
+}
+.nav{
+    border-bottom: 2px solid saddlebrown !important;
+    width: 96vw;
+    margin: auto;
+    text-align: center;
+}
+.nav .nav-link.active{
+    background-color: #f6c763 !important;
+    color: saddlebrown;
+    border-top: 2px solid saddlebrown !important;
+    border-left: 2px solid saddlebrown !important;
+    border-right: 2px solid saddlebrown !important;
+}
+.nav .nav-link{
+    width: 24vw;
+    font-size: 22px;
+    color: black;
+    transition: all ease .3s;
+}
+.nav .nav-link:hover{
+    border: 0px;
+    cursor: pointer;
+    color: #f6c763;
+}
+.productContainer{
+    background-color: #f6c763;
+    border-left: 2px solid saddlebrown;
+    border-right: 2px solid saddlebrown;
+    border-bottom: 2px solid saddlebrown;
+    width: 96vw;
+    margin: auto;
+}
+.mobileMenu{
+    display: none !important;
+    width: 80%;
+    border: 2px solid saddlebrown !important;
+    margin: auto;
+    position: relative;
+    top: 10px;
+    font-size: 22px !important;
+    color: saddlebrown !important;
+}
+.showing{
+    display: none;
+    width: 80%;
+    margin: auto;
+}
+menu{
+    margin-left: 22px;
+    padding:30px 20px 0px 20px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    margin: auto;
+    gap: 20px;
+    flex-wrap: wrap;
+    min-width: max-content;
+}
+.heading{
+    color: #f6c763;
+    margin-bottom: 0%;
+    padding: 50px 20px ;
+}
+.menuItem{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    color: saddlebrown;
+    border: 2px solid saddlebrown;
+    border-radius: 50px;
+    padding: 10px;
+    text-decoration: none;
+    transition: all ease-in-out .3s;
+}
+.menuItem:hover{
+    cursor: pointer;
+    color: white;
+    background-color: rgb(175, 88, 25);
+    border: 2px solid rgb(175, 88, 25);
+}
+.onmenu{
+    border: 2px solid white;
+    color: white;
+}
+.onmenu:hover{
+    border: 2px solid white;
+    background-color: white;
+    color: #f6c763;
+}
+
+/****************************************************************** GRID *******************************************************************/
+img{
+    height: 100px;
+}
+.none{
+    display: grid !important;
+}
+.gridContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+    margin: auto;
+    padding: 5vw 4vw;
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+}
+.gridContainer .gridItem{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 270px auto;
+    border: 2px solid saddlebrown;
+    border-bottom: 0px;
+    border-radius: 15px;
+    position: relative;
+    box-shadow: 1px 1px 5px rgb(14, 13, 13);
+    transition: all ease .3s;
+    background-color: saddlebrown;
+}
+.gridItem:hover{
+    cursor: pointer;
+    opacity: 1;
+    box-shadow: 2px 2px 10px rgb(14, 13, 13);
+}
+.see{
+    display: none !important;
+}
+.image-holder{
+    height: 300px;
+    max-width: 100%;
+    margin: 0%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom: 0px;
+    transition: all ease-in-out .8s;
+}
+.image-holder:hover{
+    cursor: pointer;
+}
+.image-holder img{
+    z-index: -1;
+    height: 300px;
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom: 0px;
+    position: absolute;
+    top: 0px;
+}
+.cast{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    width: 100%;
+    height: 100%;
+}
+.cast:hover{
+    background-size: 175%;
+}
+
+
+/****************************************************************** OTHERS *******************************************************************/
+.gridContainer .gridItem .other{
+    background-color: saddlebrown;
+    padding:20px 0px 10px 10px;
+    z-index: 1;
+    color: white;
+    font-size: 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border: 1px solid saddlebrown;
+    border-top: 2px solid saddlebrown;
+    border-radius: 15px;
+}
+.gridContainer .gridItem .name{
+    font-size: 25px;
+    font-weight: 800;
+    color: #f6c763;
+}
+.gridContainer .gridItem .other .inner-other{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+}
+.gridContainer .gridItem .other .inner-other .addToCart{
+    border: 2px solid white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: all ease .3s;
+}
+.gridContainer .gridItem .other .inner-other .addToCart:hover{
+    border: 2px solid #f6c763;
+    color: #f6c763;
+    cursor: pointer;
+}
+
+/****************************************************************** REPAIR FORM *******************************************************************/
+.repair-form{
+    border: 0px !important;
+    box-shadow: 0px 0px !important;
+    display: none;
+    grid-column: 1/ span 3;
+    font-size: 22px;
+    width: 90%;
+    margin: auto;
+    padding-top: 70px;
+    padding-bottom: 30px;
+}
+.repair-form input{
+    color: black;
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    margin-bottom: 30px;
+    border: 1px solid #f6c763;
+    border-radius: 5px;
+    font-size: 22px;
+}
+.repair-form .smallee{
+    width: 90%;
+}
+.repair-form textarea{
+    width: 100%;
+    border: 0px;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.repair-form .repair-radios{
+    display: inline;
+    text-align: left !important;
+    width: 20px;
+    height: 20px;
+}
+.request{
+    border: 0px !important;
+    box-shadow: 0px 0px !important;
+    width: 80%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 50px;
+    font-size: 25px;
+    border-radius: 5px !important;
+    border: 0px;
+    background-color: rgb(175, 88, 25) !important;
+    grid-column: 1 / span 3 !important ;
+    color: white;
+    margin-top: 0%;
+    margin-bottom: 50px;
+    transition: all ease .3s;
+    display: none;
+}
+.request:hover{
+    background-color: rgb(201, 105, 37) !important;
+}
+
+
+
+/****************************************************************** CHECKOUT *******************************************************************/
+.checkout{
+    font-size: 22px;
+    width: 90vw;
+    margin: auto;
+    margin-bottom: 50px;
+    padding-top: 70px;
+    padding-bottom: 30px;
+    border-bottom: 2px solid saddlebrown;
+}
+.checkoutheading{
+    color: #f6c763;
+    margin-bottom: 0%;
+    font-size: 70px;
+    padding-bottom: 20px;
+}
+.receipientAddress{
+    border-top: 1px solid #f6c763;
+    padding-top: 30px;
+}
+.receipient{
+    padding-left: 20px;
+}
+.checkoutmainform{
+    width: 60vw;
+    padding: 20px;
+}
+.checkoutforminputs{
+    color: black;
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    margin-bottom: 30px;
+    border: 1px solid #f6c763;
+    border-radius: 5px;
+    font-size: 22px;
+}
+.fullname{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.subname{
+    width: 50%;
+    display: grid;
+    grid-template-columns: auto 300px;
+}
+.small{
+    width: 80%;
+    display: inline;
+}
+.payments{
+    padding: 20px;
+    margin: 20px 0px;
+    border-top: 1px solid #f6c763;
+    border-bottom: 1px solid #f6c763;
+}
+.paymentOptionContainer{
+    width: fit-content;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+}
+.paymentOption{
+    height: 150px;
+    width: 150px;
+    border-radius: 15px;
+    background-color: rgb(175, 88, 25);
+    color: #f6c763;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.checkout .form-check-input{
+    background-color: #f6c763 !important;
+    border:1px solid #f6c763 !important;
+    transform: translateY(40%);
+}
+.checkoutmainform label{
+    font-size: 22px;
+    color: rgb(48, 47, 47);
+}
+.checkoutbtn{
+    width: 80%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 50px;
+    font-size: 25px;
+    border-radius: 5px;
+    border: 0px;
+    background-color: rgb(175, 88, 25);
+    color: white;
+    transition: all ease .3s;
+}
+.checkoutbtn:hover{
+    background-color: rgb(201, 105, 37);
+}
+
+
+
+
+/****************************************************************** ABOUT US *******************************************************************/
+.aboutus{
+    padding-bottom: 100px;
+    border-bottom: 2px solid saddlebrown;
+    width: fit-content;
+    margin: auto;
+}
+
+.aboutusHeading{
+    max-width: 100vw ;
+    height: 40vh;
+    font-size: 70px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-image: url('../images/NewFolder/aboutuspagetwo.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.brown{
+    color: saddlebrown;
+}
+.cofee{
+    text-decoration: none;
+    color: #f6c763;
+    transition: all ease .3s;
+}
+.firstwords{
+    width: 60vw;
+    font-size: 22px;
+    margin: auto;
+    margin-top: 30px;
+}
+.ourproducts{
+    width: 90vw;
+    height: auto;
+    margin: auto;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.ourproducts .stuff{
+    width: 60vw;
+    margin-right: 10px;
+    padding-right: 0px;
+}
+.ourproducts .stuff .heading{
+    font-size: 30px;
+    margin: 0%;
+    padding: 0%;
+    width: fit-content;
+}
+.words{
+    font-size: 22px;
+}
+.aboutImages{
+    width: 40vw;
+    height: 60vh;
+}
+.ourservices{
+    width: 90vw;
+    height: auto;
+    margin: auto;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.ourservices .stuff{
+    width: 60vw;
+    margin-left: 30px;
+    padding-right: 0px;
+}
+.ourservices .stuff .heading{
+    font-size: 30px;
+    margin: 0%;
+    padding: 0%;
+    width: fit-content;
+}
+.quote{
+    width: 60vw;
+    margin: auto;
+    margin-top: 100px;
+}
+.quote > img{
+    width: 100%;
+}
+.quote > div{
+    width: 70%;
+    font-size: 30px;
+    margin: auto;
+    margin-top: 20px;
+    position: relative;
+    font-family: 'Dancing Script', cursive;
+}
+.wiseGuy{
+    font-family: 'Dancing Script', cursive;
+    color: gray;
+    position: absolute;
+    right: 0%;
+    display: block;
+}
+.productLink{
+    position: absolute;
+    left: 0%;
+    bottom: 0%;
+    font-size: 30px;
+    transform: translateY(200%);
+}
+
+
+
+/****************************************************************** CONTACT US *******************************************************************/
+.contactUsHeading{
+    margin-top: 70px;
+    max-width: 100vw !important;
+    height: 40vh;
+    font-size: 70px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-image: url('../images/NewFolder/contactus.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+iframe{
+    margin-top: 50px;
+    width: 90vw;
+}
+.contactusStuff{
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 70px;
+}
+.contactInfo{
+    width: 40vw;
+}
+.contactInfo .infoHead{
+    font-size: 50px;
+}
+.gmail{
+    text-decoration: none;
+    color: black;
+    font-size: 22px;
+    transition: all ease .3s;
+}
+.gmail:hover{
+    color: #f6c763;
+}
+.phone{
+    width: fit-content;
+    font-size: 22px;
+    display: block;
+    text-decoration: none;
+    color: black;
+    transition: all ease .3s;
+}
+.phone:hover{
+    color: #f6c763;
+}
+.form{
+    margin-top: 30px;
+    width: 90%;
+}
+.form .feedbackinputs{
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    margin-bottom: 30px;
+    border: 2px solid saddlebrown;
+    border-radius: 5px;
+    font-size: 22px;
+}
+.submit{
+    width: 200px;
+    font-size: 30px;
+    padding: 10px;
+    color: white;
+    background-color: rgb(175, 88, 25);
+    border-radius: 15px;
+    border: 0px;
+    transition: all ease .3s;
+}
+.form .submit:hover{
+    background-color: rgb(201, 105, 37);
+}
+.feedbackItem{
+    width: 40vw;
+    background-color: saddlebrown;
+    box-shadow: 2px 2px 10px rgb(14, 13, 13);
+    color: white;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+.feedbackItem .name{
+    font-size: 30px;
+    color: #f6c763;
+}
+.viewMore{
+    width: 200px;
+    font-size: 30px;
+    padding: 10px;
+    color: white;
+    background-color: rgb(175, 88, 25);
+    border-radius: 15px;
+    border: 0px;
+    transition: all ease .3s;
+}
+.viewMoreMobile{
+    display: none;
+    width: 300px;
+    height: 70px;
+    font-size: 30px;
+    padding: 10px;
+    margin-top: 20px;
+    color: white;
+    background-color: rgb(175, 88, 25);
+    border-radius: 15px;
+    border: 0px;
+    transition: all ease .3s;
+}
+
+.success{
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    display: none;
+    z-index: 10000;
+}
+.successInner{
+    width: 350px; 
+    height: 200px; 
+    position: absolute; 
+    bottom: 50%; 
+    right: 50%; 
+    border-radius: 25px; 
+    background-color: saddlebrown; 
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    transform: translate(50%, 50%)
+}
+.successMessage{
+    font-size: 30px;
+    text-align: center;
+    color: #f6c763;
+}
+.cancel{
+    position: absolute; 
+    top: -4%; 
+    right: 5%; 
+    color: #f6c763; 
+    font-size: 30px; 
+    cursor: pointer
+}
+
+
+.seeFooter{
+    height: 450px;
+    width: 100%;
+    opacity: 0;
+}
+
+
+/****************************************************************** ANDROID VIEW *******************************************************************/
+@media only screen and (max-width: 767px){
+
+    nav{
+        width: 100% !important;
+    }
+    body{
+        overflow-x: hidden !important;
+    }
+    nav .links .nav-item a.nav-link{
+        font-size: 22px;
+    }
+    .header{
+        width: 100%;
+    }
+    .header .openingwords {
+        font-size: 20px;
+    }
+    .big-logo{
+        position: relative;
+        left: 0%;
+        width: 80%;
+    }
+    .almightyContainer{
+        margin-bottom: 0px;
+        width: 100vw !important;
+        z-index: 100;
+    }
+    .heading{
+        width: fit-content;
+    }
+    .productTabs{
+        text-align: center !important;
+        padding-left: 0% !important;
+        font-size: 17px !important;
+    }
+    
+    menu{
+        grid-template-columns: auto auto auto;
+        display: none;
+    }
+    .mobileMenu{
+        display: block !important;
+        width: 95%;
+    }
+    .showing{
+        display: block;
+        width: 95%;
+    }
+    .showing .collapse {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .showing .collapse .menuItem {
+        display: inline;
+        width: fit-content;
+    }
+    .repair{
+        width: 95% !important;
+    }
+    .discountContainer{
+        width: 100vw !important;
+    }
+    .discount{
+        grid-template-columns: auto;
+        width: 70vw;
+    }
+    .gridContainer{
+        grid-template-columns: auto auto;
+        column-gap: 5%;
+        row-gap: 25px;
+    }
+    .gridContainer .gridItem{
+        width: 100%;
+        height: fit-content;
+    }
+    .gridContainer .gridItem .image-holder{
+        height: 100px;
+    }
+    .gridContainer .gridItem .other .name {
+        font-size: 17px;
+        height: 25px;
+        overflow: hidden;
+    }
+    .gridContainer .gridItem .other .inner-other{
+        font-size: 17px !important;
+    }
+    .fullname{
+        column-gap: 20px;
+    }
+    .subname{
+        column-gap: 20px;
+        width: 60% !important;
+        min-width: 60vw !important;
+        padding: 0% !important;
+        padding-right: -10px !important;
+    }
+    #cvv{
+        width: 100px;
+    }
+    #cvvlabel{
+        width: fit-content;
+    }
+    .paymentOptionContainer{
+        margin-top: 10px;
+        grid-template-columns: auto auto auto;
+        width: 100%;
+    }
+    .paymentOption{
+        height: 50px;
+        width: 70px;
+    }
+    .paymentOption .innerpayment {
+        font-size: 1rem;
+    }
+    .checkoutbtn {
+        font-size: 1rem;
+    }
+    .successMessage{
+        font-size: 20px !important;
+    }
+    .cancelbutton{
+        font-size: 25px !important;
+        width: 60% !important;
+    }
+    .aboutus{
+        margin: 0%;
+        width: 100vw !important;
+    }
+    .aboutusHeading{
+        width: 100vw;
+        height: 100px;
+        font-size: 3rem;
+        background-position: 0px, -100px;
+    }
+    .firstwords{
+        width: 90vw;
+        font-size: 19px !important;
+    }
+    .aboutImages{
+        height: 200px;
+        width: 90%;
+    }
+    .ourproducts{
+        flex-direction: column;
+        width: 95vw;
+        margin: 20px auto;
+    }
+    .ourproducts .stuff .words{
+        width: 100% !important;
+        margin: 0%;
+    }
+    .ourservices{
+        flex-direction: column;
+        width: 95vw;
+        margin: 20px auto;
+    }
+    .ourservices .stuff .words{
+        width: 100% !important;
+        margin: 0%;
+    }
+    .quote{
+        width: 90%;
+    }
+    .quote > div{
+        font-size: 19px;
+    }
+    .productLink {
+        transform: translate(-15%, 200%);
+        font-size: 1.5rem;
+        text-align: center;
+        width: 90vw;
+    }
+    .contactUsHeading{
+        width: 100% ;
+        height: 100px;
+        font-size: 3rem;
+        background-position: 0px, -100px;
+    }
+    center iframe {
+        height: 30vh;
+    }
+    .contactusStuff{
+        flex-direction: column;
+    }
+    .contactInfo{
+        width: 70vw;
+    }
+    .contactInfo .infoHead {
+        font-size: 2.5rem;
+
+    }
+    .contactInfo form button {
+        font-size: 20px;
+    }
+    .checkoutmainform{
+        width: 100%;
+    }
+    .contactusStuff .feedback{
+        display: none;
+    }
+    .contactusStuff > button {
+        font-size: 20px;
+        width: 200px;
+    }
+    .ourproducts .stuff , .ourservices .stuff{
+        width: 90%;
+    }
+    .words{
+        font-size: 19px;
+    }
+    .viewMoreMobile{
+        display: block !important;
+    }
+}
+
+
+/****************************************************************** IPAD VIEW *******************************************************************/
+@media screen and (max-width: 1200px) and (min-width: 767px){
+    .logo{
+        height: 50px;
+        width: 90px;
+    }
+    nav .person .photo{
+        font-size: 20px;
+    }
+    nav .cart-icon{
+        font-size: 20px;
+    }
+    nav .fa-eye{
+        font-size: 20px;
+    }
+    nav .links .nav-item a.nav-link{
+        font-size: 15px;
+    }
+    form .search{
+        margin-top: 7px;
+        height: 30px;
+        max-width: 90px;
+        font-size: 13px;
+    }
+    form .search-icon{
+        margin-top: 7px;
+        height: 30px; 
+        font-size: 13px;
+        display: inline;
+    }
+    nav .person .userName{
+        font-size: 13px;
+    }
+    .almightyContainer{
+        z-index: 200 !important;
+    }
+    .primaryContainer .gridContainer {
+        grid-template-columns: auto auto;
+    }
+    .gridContainer .gridItem .other .name {
+        font-size: 20px;
+    }
+    .web .innercontainer .name {
+        font-size: 20px;
+    }
+    menu{
+        grid-template-columns: repeat(5, 1fr);
+    }
+    .aboutImages{
+        height: 400px;
+    }
+}
